@@ -64,6 +64,7 @@ const CV = () => {
       <Card style={cardStyle}>
         <Card.Header as="h4">Publications</Card.Header>
         <Card.Body>
+          <Card.Title>Book Chapter</Card.Title>
           <Card.Text>
             <a href="https://www.novapublishers.com/catalog/product_info.php?products_id=50365&osCsid=">
               A.Hajizadeh, A.H.Shahirinia, D.C.Yu, Chap. 10 "Power Control of
