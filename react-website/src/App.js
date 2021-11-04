@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Home from "./components/Home";
 import CV from "./components/CV";
+import NoMatch from "./components/404";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -17,8 +18,11 @@ function App() {
             <Route path="/cv">
               <CV />
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <Home />
+            </Route>
+            <Route path="*">
+              <NoMatch />
             </Route>
           </Switch>
         </Container>
